@@ -1,0 +1,14 @@
+{
+  "name": "cli-share",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minify": "minify ./src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "uglify-js": "^3.17.4"
+  }
+}
