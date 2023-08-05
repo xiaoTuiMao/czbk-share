@@ -1,17 +1,18 @@
 {
-  "name": "@czbkshare/node-cli-share",
-  "version": "1.0.0",
+  "name": "czbkshare-node-cli-share",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "scripts": {
     "minify": "minify ./src/index.js"
   },
   "bin": {
-    "czbk-node-cli": "./bin/index.js"
+    "czbk-node-cli": "./.bin/index.js"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "czbkshare-node-cli-share": "^1.0.0",
     "uglify-js": "^3.17.4"
   }
 }

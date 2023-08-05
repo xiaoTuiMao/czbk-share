@@ -7,7 +7,7 @@ const handleError = (msg) => {
   console.error(`Error: ${msg}`);
   process.exit(1);
 }
-
+const rootPath = process.cwd();
 /**
  * 1. 通过上一步获取的文件名，解析出当前文件类型
  * 2. 根据不同的文件类型采用不同的压缩工具
@@ -19,14 +19,14 @@ const minifyFile = (filePath) => {
 
   if (extname === '.js') {
     // 读取文件
-    const code = fs.readFileSync(path.resolve(__dirname, filePath));
+    const code = fs.readFileSync(path.resolve(rootPath, filePath));
     const result = UglifyJS.minify(code.toString());
     if(result.error) {
       handleError(result.error);
       return;
     }
     // 输出压缩文件
-    const distFilePath = path.resolve(__dirname, `mini-${filePath}`);
+    const distFilePath = path.resolve(rootPath, `mini-${filePath}`);
     fs.writeFileSync(distFilePath, result.code, { encoding: 'utf-8' });
     console.log(`文件压缩成功，压缩文件地址为：${distFilePath}`);
     return;

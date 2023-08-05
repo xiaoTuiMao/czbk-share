@@ -1,0 +1,14 @@
+{
+  "name": "demo-project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "minify": "czbk-node-cli minify index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "czbkshare-node-cli-share": "^1.0.1"
+  }
+}
