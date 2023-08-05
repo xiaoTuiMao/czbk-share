@@ -9,6 +9,6 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "czbkshare-node-cli-share": "^1.0.1"
+    "czbkshare-node-cli-share": "^1.0.2"
   }
 }
